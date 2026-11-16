@@ -1,33 +1,32 @@
-import { Movie } from './movie.js';
+import { Task } from './task.js';
 
 class Main
 {
     constructor()
     {
-        this.movieHolder = document.getElementById('movie-holder');
-        this.movies = [];
+        this.taskHolder = document.getElementById('task-holder');
+        this.tasks = [];
     }
 
     async initialize()
     {
-        const moviesFile = await fetch('./movies.json');
-        const moviesData = await moviesFile.json();
+        const tasksFile = await fetch('./tasks.json');
+        const tasksData = await tasksFile.json();
 
-        moviesData.forEach((movieData) =>
+        tasksData.forEach((taskData) =>
         {
-            const movie = new Movie(
-                movieData.title,
-                movieData.director,
-                movieData.year,
-                movieData.score
+            const task = new Task(
+                taskData.text,
+                taskData.category,
+                taskData.completed
             );
 
-            this.movies.push(movie);
+            this.tasks.push(task);
         });
 
-        this.movies.forEach((movie) =>
+        this.tasks.forEach((task) =>
         {
-            movie.Render(this.movieHolder);
+            task.Render(this.taskHolder);
         });
     }
 }

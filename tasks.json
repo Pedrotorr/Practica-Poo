@@ -1,0 +1,17 @@
+[
+    {
+        "text": "Revisar el documento del proyecto",
+        "category": "Trabajo",
+        "completed": false
+    },
+    {
+        "text": "Comprar alimentos",
+        "category": "Personal",
+        "completed": false
+    },
+    {
+        "text": "Enviar las notas de la reunión",
+        "category": "Trabajo",
+        "completed": true
+    }
+]
