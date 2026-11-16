@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Alex Morgan",
+        "position": "Desarrollador Frontend",
+        "department": "Desarrollo",
+        "available": true
+    },
+    {
+        "name": "Jordan Lee",
+        "position": "Diseñador",
+        "department": "Diseño",
+        "available": false
+    },
+    {
+        "name": "Taylor Kim",
+        "position": "Desarrollador Backend",
+        "department": "Desarrollo",
+        "available": true
+    },
+    {
+        "name": "Casey Patel",
+        "position": "Especialista en Marketing",
+        "department": "Marketing",
+        "available": true
+    }
+]
